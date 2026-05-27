@@ -141,14 +141,44 @@ body{
 
     border-bottom:2px solid #c8a74d;
 
-    position:sticky;
-    top:0;
+    position:relative;
 
     z-index:9999;
 
     backdrop-filter:blur(8px);
 
     box-shadow:0 5px 15px rgba(0,0,0,0.35);
+
+    transition:0.3s ease;
+}
+
+/* STICKY NAVBAR */
+
+.navbar.sticky-nav{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    animation:slideDown 0.35s ease;
+
+}
+
+/* NAVBAR ANIMATION */
+
+@keyframes slideDown{
+
+    from{
+        transform:translateY(-100%);
+    }
+
+    to{
+        transform:translateY(0);
+    }
+
 }
 
 .navbar a{
