@@ -44,18 +44,15 @@ body{
 ========================================= */
 
 .top-header{
-
     width:100%;
 
+    padding:18px 6%;
+
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
-    gap:20px;
-
-    padding:20px 5%;
+    position:relative;
 
     background:rgba(0,0,0,0.35);
 
@@ -69,23 +66,15 @@ body{
 ========================================= */
 
 .header-text{
-
-    flex:1;
-
     text-align:center;
-
-    max-width:1000px;
 }
 
 .header-text h1{
-
     color:white;
 
     font-size:3rem;
 
     letter-spacing:3px;
-
-    line-height:1.1;
 
     font-family:'Oswald', sans-serif;
 
@@ -93,33 +82,26 @@ body{
 }
 
 .header-text p{
-
     color:#ddd;
 
-    margin-top:8px;
+    margin-top:5px;
 
     font-size:14px;
 }
 
 /* =========================================
-   HEADER LOGOS
+   LOGOS
 ========================================= */
 
-.header-logo{
+.logo-left,
+.logo-right{
 
-    flex:0 0 90px;
+    position:absolute;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-}
-
-.header-logo img{
+    top:50%;
+    transform:translateY(-50%);
 
     width:85px;
-
     height:85px;
 
     object-fit:contain;
@@ -133,6 +115,13 @@ body{
     box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
 
+.logo-left{
+    left:5%;
+}
+
+.logo-right{
+    right:5%;
+}
 
 /* =========================================
    NAVBAR
@@ -249,7 +238,7 @@ body{
 }
 
 .hero-content h2{
-    font-size:2.5rem;
+    font-size:5rem;
 
     line-height:1.1;
 
@@ -466,7 +455,46 @@ body{
 
 }
 
+@media(max-width:768px){
 
+    .logo-left,
+    .logo-right{
+        width:65px;
+        height:65px;
+    }
+
+    .top-header{
+        padding-top:25px;
+        padding-bottom:25px;
+    }
+
+    .header-text h1{
+        font-size:1.4rem;
+    }
+
+    .hero-content h2{
+        font-size:2.4rem;
+    }
+
+    .hero-buttons a{
+        width:100%;
+        max-width:300px;
+    }
+
+    .navbar{
+        gap:18px;
+        padding:15px;
+    }
+
+    .navbar a{
+        font-size:13px;
+    }
+
+    .info-text p{
+        font-size:16px;
+    }
+
+}
 /* =========================================
    GALLERY SECTION
 ========================================= */
@@ -571,80 +599,20 @@ body{
 
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
 
-    .top-header{
-
-        gap:10px;
-
-        padding:15px 10px;
+    .gallery-text h2{
+        font-size:2.5rem;
     }
 
-    .header-logo{
-
-        flex:0 0 55px;
+    .gallery-text p{
+        font-size:16px;
     }
 
-    .header-logo img{
-
-        width:50px;
-
-        height:50px;
-    }
-
-    .header-text h1{
-
-        font-size:1.15rem;
-
-        line-height:1.2;
-
-        letter-spacing:1px;
-    }
-
-    .header-text p{
-
-        font-size:11px;
-
-        line-height:1.4;
-    }
-
-}
-@media(max-width:480px){
-
-    .header-logo{
-
-        flex:0 0 45px;
-    }
-
-    .header-logo img{
-
-        width:42px;
-
-        height:42px;
-    }
-
-    .header-text h1{
-
-        font-size:0.95rem;
-
-        line-height:1.2;
-    }
-
-    .header-text p{
-
-        display:none;
-    }
-
-}
-@media(max-width:768px){
-
-    .navbar{
-        gap:10px;
-        padding:12px;
-    }
-
-    .navbar a{
-        font-size:12px;
+    .gallery-grid img{
+        height:220px;
     }
 
 }
