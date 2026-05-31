@@ -457,43 +457,36 @@ body{
 
 @media(max-width:768px){
 
-    .logo-left,
-    .logo-right{
-        width:65px;
-        height:65px;
+    .top-header{
+        padding:15px 10px;
     }
 
-    .top-header{
-        padding-top:25px;
-        padding-bottom:25px;
+    .logo-left{
+        left:10px;
+        width:55px;
+        height:55px;
+    }
+
+    .logo-right{
+        right:10px;
+        width:55px;
+        height:55px;
+    }
+
+    .header-text{
+        width:100%;
+        padding:0 70px;
     }
 
     .header-text h1{
         font-size:1.4rem;
+        line-height:1.2;
+        letter-spacing:1px;
     }
 
-    .hero-content h2{
-        font-size:2.4rem;
+    .header-text p{
+        font-size:12px;
     }
-
-    .hero-buttons a{
-        width:100%;
-        max-width:300px;
-    }
-
-    .navbar{
-        gap:18px;
-        padding:15px;
-    }
-
-    .navbar a{
-        font-size:13px;
-    }
-
-    .info-text p{
-        font-size:16px;
-    }
-
 }
 /* =========================================
    GALLERY SECTION
